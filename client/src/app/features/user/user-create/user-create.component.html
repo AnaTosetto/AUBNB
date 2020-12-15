@@ -1,0 +1,37 @@
+<div class="card mb-3 centered__user" style="max-width: 1250px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../../../../assets/18.jpg" class="card-img img-login">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body card__register">
+        <h3 class="card-title card__title">Cadastrar</h3>
+        <form [formGroup]="form" (submit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Digite seu nome">
+            <span class="Error" *ngIf="errorName">O nome é obrigatório!</span>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Digite seu e-mail">
+            <span class="Error" *ngIf="errorEmail">O e-mail é obrigatório!</span>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" id="telephoneNumber" formControlName="telephoneNumber" placeholder="Digite seu número de celular">
+            <span class="Error" *ngIf="errorTelephone">O número de celular é obrigatório!</span> 
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="password" formControlName="password" placeholder="Digite sua senha">
+            <span class="Error" *ngIf="errorPassword">A senha é obrigatória!</span> 
+          </div>
+          <button type="submit" class="btn btn-block">Cadastrar</button>
+        </form>
+        <div *ngIf="messageSuccess" class="alert alert-success" role="alert">
+          Usuário cadastrado com sucesso!
+        </div>
+        <h6 class="text-center cadastrar">Possui uma conta? <a [routerLink]="['/login']" >Conecte-se</a></h6>
+      </div>
+    </div>
+    
+  </div>
+</div>
+

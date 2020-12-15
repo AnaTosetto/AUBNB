@@ -1,0 +1,61 @@
+<div class="card mb-3 centered__profile" style="max-width: 700px;">
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../../../../assets/19.jpeg" class="rounded-circle img">
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="card-body">
+          <h3 class="card-title card__title">Perfil</h3>
+
+        <ul class="list-group list-group-flush">
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Nome</span>
+            </div>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Digite seu nome">
+            <span class="Error" *ngIf="errorName">O nome é obrigatório!</span>
+          </div>
+
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+            </div>
+            <input class="form-control" type="text" placeholder="{{user.email}}" readonly>
+          </div>
+
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Celular</span>
+            </div>
+            <input type="tel" class="form-control" id="telephoneNumber" formControlName="telephoneNumber"
+              placeholder="Digite seu número de celular">
+            <span class="Error" *ngIf="errorTelephone">O número de celular é obrigatório!</span>
+          </div>
+
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Senha</span>
+            </div>
+            <input type="password" class="form-control" id="password" formControlName="password"
+              placeholder="Digite sua senha">
+            <span class="Error" *ngIf="errorPassword">A senha é obrigatória!</span>
+          </div>
+        </ul>
+
+      </div>
+    
+      <div class="row">
+        <div class="col-md-7">
+        <button type="submit" class="btn btn__profile btn-block" >Salvar</button>
+        </div>
+        <div class="col-md-5">
+      
+        <button class="btn btn__profile btn-block" [routerLink]="['/profile']">Cancelar</button>
+      </div>
+    </div>
+
+    </div>      
+  </div>  
+  </form>
+</div>

@@ -1,0 +1,59 @@
+.card {
+  left: 25%;
+  width: 70%;
+  margin-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+
+  &__view-detail {
+    padding-top: 15px;
+
+    &__button {
+      background-color: #FF4500;
+      border-color: #FF4500;
+    }
+  }
+
+  &__detail {
+    height: auto;
+  }
+
+  &__img {
+    width: 230px;
+    height: 140px;
+  }
+
+  &__img-usuario{
+    width: 120px;
+    height: 120px;
+  }
+
+  &__description{
+    padding-top: 15px;
+  }
+}
+
+.card-text{
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.card-header{
+  background-color: #FFFFFF;
+  margin-top: -10px;
+}
+
+.h4{
+  margin-top: 15px;
+}
+
+.icone{
+  margin-top: -5px;
+}
+
+.btn {
+  background-color: #FF4500;
+  color: #ffffff;
+  width: 125px;
+  float: center;
+}

@@ -1,0 +1,103 @@
+<div class="card mb-3 centered" style="max-width: 900px;">
+  <div class="row no-gutters">
+    <div class="col-md-12 text-center">
+      <h3 class="card-header">Cadastrar</h3>
+    </div>
+    <div class="card-body card__register">
+
+      <form [formGroup]="form" (submit)="onSubmit()">
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputAddress">Fale sobre você</label>
+            <textarea type="text" class="form-control" rows="3" id="description" formControlName="description"></textarea>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputPassword4">Descrição do local</label>
+            <textarea type="text" class="form-control" rows="3" id="placeDescription" formControlName="placeDescription"></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Possui animais em casa?</label>
+            <input type="text" class="form-control" id="hasDog" formControlName="hasDog"
+            placeholder="Ex.: Tenho 1 cachorro">
+            
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Tipo de moradia</label>
+            <input type="text" class="form-control" id="housingType" formControlName="housingType"
+            placeholder="Ex.: Apartamento">
+            
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputAddress">Tamanho máx do animal permitido</label>
+            <input type="text" class="form-control" id="animalSize" formControlName="animalSize"
+            placeholder="Ex.: 5-10Kg">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputAddress">Tamanho do pátio</label>
+            <input type="text" class="form-control" id="patioSize" formControlName="patioSize"
+            placeholder="Ex.: 20m²">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputAddress">Preço da hospedagem</label>
+            <input type="text" class="form-control" id="price" formControlName="price"
+            placeholder="Ex.: 40">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-10">
+            <label for="inputAddress">Endereço</label>
+            <input type="text" class="form-control" id="street" formControlName="street">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputAddress">Número</label>
+            <input type="text" class="form-control" id="number" formControlName="number">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputAddress">Bairro</label>
+            <input type="text" class="form-control" id="neighborhood" formControlName="neighborhood">
+          </div>
+          <div class="form-group col-md-5">
+            <label for="inputAddress">Cidade</label>
+            <input type="text" class="form-control" id="city" formControlName="city">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputAddress">Estado</label>
+            <input type="text" class="form-control" id="state" formControlName="state">        
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="inputAddress">País</label>
+            <input type="text" class="form-control" id="country" formControlName="country">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputAddress">CEP</label>
+            <input type="text" class="form-control" id="postalCode" formControlName="postalCode">
+          </div>
+          <div class="form-group col-md-7">
+            <label for="inputAddress">Informações adicionais</label>
+            <input type="text" class="form-control" id="additionalInfo" formControlName="additionalInfo">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-block">Cadastrar</button>
+      </form>
+    </div>
+
+    <!-- <div *ngIf="messageSuccess" class="alert alert-success" role="alert">
+          Usuário cadastrado com sucesso!
+        </div> -->
+  </div>
+</div>

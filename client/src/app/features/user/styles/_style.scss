@@ -1,0 +1,75 @@
+.card {
+
+  &__title {
+    text-align: center;
+  }
+
+  &__login{
+    margin: 50px auto !important;
+  }
+
+  &__register{
+    margin: 15px auto !important;
+  }
+}
+
+.centered {
+    &__user{
+      margin: 150px auto !important;
+    float: none !important;
+    }
+
+    &__profile{
+      margin: 130px auto !important;
+      float: none !important;
+      padding-left: 15px;
+      padding-bottom: 15px;
+    }
+}
+
+.btn {
+  background-color: #FF4500;
+  color: #ffffff;
+
+  &__cadastrar {
+    margin-top: 10px;   
+  }
+
+  &__profile{
+      width: 125px;
+      float: right;
+      margin-right: 20px;
+      margin-top: -20px;
+  }
+
+}
+
+.text {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.alert{
+  margin-top: 20px;
+}
+
+.cadastrar{
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+.Error{
+  color: #FF4500;
+  font-size: 12px;
+  margin: -15px auto !important;
+}
+
+.img {
+  width: 280px;
+  height: 280px;
+  margin-top: 15px; 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

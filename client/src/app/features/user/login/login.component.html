@@ -1,0 +1,28 @@
+<div class="card mb-3 centered__user" style="max-width: 860px;">
+  <div class="row no-gutters">
+    <div class="col-md-6">
+      <img src="../../../../assets/7.jpg" class="card-img img-login">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body card__login">
+        <h3 class="card-title card__title">Entrar</h3>
+        <form [formGroup]="form" (submit)="onSubmit()">
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Digite seu e-mail">
+            <span class="Error" *ngIf="errorEmail">O e-mail é obrigatório!</span>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="senha" formControlName="password" placeholder="Digite sua senha">
+            <span class="Error" *ngIf="errorPassword">A senha é obrigatória!</span>
+          </div>
+          <button type="submit" class="btn btn-block">Entrar</button>
+        </form>
+        <div *ngIf="messageError" class="alert alert-danger" role="alert">
+          Email ou senha inválidos.
+        </div>
+        <h6 class="text-center cadastrar">Não possui uma conta? <a [routerLink]="['/user']" >Cadastre-se</a></h6>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,49 @@
+.card {
+    margin-bottom: 8px;
+    padding-top: 10px;
+}
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+
+    &__bem-vindo{
+        color: 	#4F4F4F;
+        font-size: 40px;
+        margin-top: -20px;
+    }
+
+    &__aubnb{
+        color: #FF4500;
+        font-size: 60px;
+        margin-top: -10px;
+    }
+
+    &__frase{
+        color: #4F4F4F;
+        font-size: 20px;
+    }
+
+    &__login{
+        font-size: 40px;
+    }
+}
+
+.img {
+    &__logo{
+        width: 60px;
+        height: 40px;
+        margin-left: -20px;
+    }
+}
+
+.centered {
+    margin: 100px auto !important;
+    float: none !important;
+}
+
+.btn {
+    background-color: #FF4500;
+    border-color: #FF4500;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
